@@ -5,7 +5,7 @@ print(l)
 print(k)
 
 words = text.split()
-for word in words: # здесь word берётся из изначального списка, "ничего не меняется
+for word in words: # здесь word берётся из изначального списка, "ничего не меняется"
     word = word.strip('!.?,:;')
     l.append(word) # а тут вроде! формируется новый словарь
 # список меняется во всех своих ипостасях - как перезаписать список?
@@ -40,7 +40,7 @@ text = '...'
 words = text.split()
 for word in words:
     if word in d: # проверяет ключ
-        d[word] += 1 # ключ - это переменная word, прибавляем 1 к значению
+        d[word] += 1 # ключ - это переменная word, прибавляем 1 к значению - частотность
     else:
         d[word] = 1
 
@@ -65,7 +65,7 @@ d = {1:'a'
 
 s1 = d[2]['a'] # достать 'abc'
 
-l = [x for x in range(100) if x $ 2 == 0]
+l = [x for x in range(100) if x % 2 == 0]
 l = [x for x in range(100)]
 
 d = {x:0 for x in 'abc'} # ключи буквы а б и с, а значения нули
@@ -78,7 +78,7 @@ d = {'a':1....}
 keys_list = list(d.keys())
 val_list = list(d.valuse())
 
-set() #  нельзя менятьб инднемов нет, но легко! посчитать уникальные элементы
+set() #  нельзя менять, инднемов нет, но легко! посчитать уникальные элементы
 s = set(['a', 'a', 'b', 'c'])
 len(s)
 
@@ -98,3 +98,28 @@ d = a[:] --- d = a
 
 
 
+# сделать изменяемыми компоненты списка - сделать их списками
+
+a,b,c,d = [1],[2],[3],[4]
+L = [d,b,a,c] # user-defined order
+print(L)
+a[0] = 5
+print(L)
+
+# сделать словарь из списка:
+
+keys = first_string.split(',')
+values = second_string.split(',')
+output_dict = dict(zip(keys, values))
+
+#проверить на заглавные буквы
+
+>>> "Alpha_beta_Gamma".istitle()
+False
+>>> "Alpha_Beta_Gamma".istitle()
+True
+>>> "Alpha_Beta_GAmma".istitle()
+False
+
+if i == 2:
+    if l[-1].istitle() == False:
