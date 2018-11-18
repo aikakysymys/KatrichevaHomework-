@@ -20,7 +20,6 @@ def cyrillic_dirs(path):
         for name in dirs:
             if re.search(cyrillic, name):
                 count += 1
-
     num = '\n2. Количество папок с полностью кириллическими названиями: ' + str(count)
     return num
 
