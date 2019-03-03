@@ -1,2 +1,2 @@
-Linl to collected files:
+Link to collected files:
 https://disk.yandex.com/client/disk/Crawled_Pravoslavie_Ru
